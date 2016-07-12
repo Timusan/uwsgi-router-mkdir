@@ -16,7 +16,10 @@ If PATH_INFO translates to '/foo/bar/' the following directory structure will be
 ```
 Given that uWSGI has permission to do so of course.
 
-This plugin is part of a set of tiny plugins which aims to give the user static file caching with sane directory structure.
+## Flat file caching with expiration
+
+This plugin is part of a set of tiny plugins which aims to give the user flat file caching with sane directory structure and file expiration.
+
 uWSGI is fully capable of storing responses into flat files, but storing them into a single directory on a site with a large amount of pages could lead to file system problems.
 
 Storing the responses in files scattered throughout directories circumvents these issues.
